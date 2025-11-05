@@ -8,7 +8,7 @@ st.set_page_config(page_title="Confusion Matrix Visualizer", layout="wide")
 
 st.title("Confusion Matrix Calculator")
 
-st.write("Enter your true and predicted labels to visualize the confusion matrix and performance metrics.")
+st.write("Enter your true and predicted labels to visualize the confusion matrix, evaluation metrics and heatmap.")
 
 # --- Input Section ---
 st.subheader("Enter True Labels and Predicted Labels")
