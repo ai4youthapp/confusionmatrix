@@ -14,7 +14,7 @@ st.write("Enter your true and predicted labels to visualize the confusion matrix
 st.subheader("Enter True Labels and Predicted Labels")
 
 true_labels = st.text_input("**True Labels** (comma-separated, e.g., 1,0,1,1,0,0)")
-pred_labels = st.text_input("**Predicted Labels** (comma-separated, e.g., 1,0,0,1,0,1)")
+pred_labels = st.text_input("**Predicted Labels** (comma-separated, e.g., 1,0,0,1,0,1) : 1 means correct prediction and 0 means incorrect prediction")
 
 if st.button("Generate Confusion Matrix"):
     if not true_labels or not pred_labels:
