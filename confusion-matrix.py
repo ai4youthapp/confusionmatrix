@@ -99,12 +99,12 @@ if st.button("Generate Confusion Matrix"):
 
                 col_heatmap, _ = st.columns([1, 5])
                 with col_heatmap:
-                    fig, ax = plt.subplots(figsize=(3, 3), dpi=200)
+                    fig, ax = plt.subplots(figsize=(4, 4), dpi=200)
                     sns.heatmap(
                         cm_df,
                         annot=True,
                         fmt='d',
-                        cmap='Blues',
+                        cmap='Greens',
                         cbar=False,
                         ax=ax,
                         annot_kws={"size": 9, "ha": 'center'}
