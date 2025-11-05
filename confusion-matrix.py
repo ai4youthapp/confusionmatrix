@@ -39,7 +39,7 @@ if st.button("Generate Confusion Matrix"):
                 )
 
                 # === 1️⃣ Confusion Matrix Table ===
-                st.subheader("Confusion Matrix (Predicted 1 before 0, Actual 1 before 0)")
+                st.subheader("Confusion Matrix")
                 st.dataframe(
                     cm_df.style.set_properties(**{
                         'text-align': 'center',
@@ -95,7 +95,7 @@ if st.button("Generate Confusion Matrix"):
                 )
 
                 # === 3️⃣ Compact Heatmap ===
-                st.subheader("Heatmap Visualization (1 before 0)")
+                st.subheader("Heatmap Visualization ")
 
                 col_heatmap, _ = st.columns([1, 5])
                 with col_heatmap:
